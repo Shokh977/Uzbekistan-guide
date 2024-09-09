@@ -2,32 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  
+  --bg: white;
+  --textColor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #5E6282;
+  --bgBox: #f0f0f0;
+}
+/* fonts  */
+.laila-bold {
+  font-family: "Laila", 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dark {
+  --bg: #1E201E;
+  --textColor: #f8f0e3;
+  --softBg: #3C3D37;
+  --softTextColor: #ECDFCC;
+}
+
+.light {
+  --bg: white;
+  --textColor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #3C3D37;
+  --bgBox: white
+
+}
+.shadow{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background: var(--bgBox);
+}
+
+.container {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--textColor);
+  max-width:100%
+}
+
+.wrapper {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+@media screen and (max-width: 1536px) {
+  .wrapper {
+    max-width: 1366px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+    max-width: 480px;
+    padding:0;
+    margin:0
   }
 }
