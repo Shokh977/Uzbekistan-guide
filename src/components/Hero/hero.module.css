@@ -1,0 +1,54 @@
+.hero {
+  position: relative;
+}
+.slideShowContainer {
+  width: 100%;
+  height: 550px;
+}
+.heroBtn{
+  z-index: 1;
+  position: absolute;
+  background: rgba(0, 3, 7, 0.2);
+  bottom: 120px;
+  right: 50px;
+  border: 1px solid white;
+}
+.blurCard {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  backdrop-filter: blur(5px); 
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2); 
+  top: 230px;
+  left: 30px;
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Adds a slight border for better contrast */
+}
+
+.line {
+  background-color: #0072ce;
+  border-radius: 8px 0 0 8px;
+  width: 12px;
+  height: 200px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  position: absolute;
+  left: 0;
+}
+
+.header, .footer {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.025;
+  color: #c7e7e3;
+}
+.title {
+  font-weight: 600;
+  font-size: 74px;
+  line-height: 1.225;
+  color: #fff;
+}

@@ -2,29 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap");
 
 :root {
-  
-  --bg: white;
-  --textColor: black;
-  --softBg: #f0f0f0;
-  --softTextColor: #5E6282;
-  --bgBox: #f0f0f0;
+  --bg: #032414;
+  --softBg: #e0f7f4;
+  --textColor: #fffae3;
+  --softTextColor: #E0F7F4;
+  --bgBox: #3A6B64;
 }
 /* fonts  */
 .laila-bold {
-  font-family: "Laila", 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Laila", "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
+body{
+  background-color: var(--bg);
 
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   max-width: 100%;
   overflow-x: hidden;
@@ -35,31 +36,15 @@ a {
   text-decoration: none;
 }
 
-.dark {
-  --bg: #1E201E;
-  --textColor: #f8f0e3;
-  --softBg: #3C3D37;
-  --softTextColor: #ECDFCC;
-}
-
-.light {
-  --bg: white;
-  --textColor: black;
-  --softBg: #f0f0f0;
-  --softTextColor: #3C3D37;
-  --bgBox: white
-
-}
-.shadow{
+.shadow {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-background: var(--bgBox);
+  background: var(--bgBox);
 }
 
 .container {
   min-height: 100vh;
-  background-color: var(--bg);
   color: var(--textColor);
-  max-width:100%
+  max-width: 100%;
 }
 
 .wrapper {
@@ -70,6 +55,12 @@ background: var(--bgBox);
   padding-right: 80px;
 }
 
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 @media screen and (max-width: 1536px) {
   .wrapper {
@@ -96,7 +87,7 @@ background: var(--bgBox);
 @media screen and (max-width: 640px) {
   .wrapper {
     max-width: 480px;
-    padding:0;
-    margin:0
+    padding: 0;
+    margin: 0;
   }
 }

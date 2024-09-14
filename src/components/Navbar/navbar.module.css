@@ -1,0 +1,22 @@
+.navbar {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar h1 {
+  font-size: 24px;
+  color: var(--text-color);
+}
+.lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

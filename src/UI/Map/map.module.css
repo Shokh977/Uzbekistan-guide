@@ -1,0 +1,20 @@
+/* map.module.css */
+.map {
+  fill: #ccc; /* Default fill color for paths */
+}
+.path {
+  fill: #ddd; /* Default fill color */
+  stroke: #000; /* Default border color */
+  stroke-width: 1px; /* Default border width */
+  transition: fill 0.3s, stroke 0.3s; /* Smooth transition for effects */
+}
+
+.pathHover {
+  fill: #f4f4f4; /* Fill color on hover */
+  stroke: #ff0000; /* Border color on hover */
+}
+
+.pathClicked {
+  stroke: #00ff00; /* Border color when clicked */
+  stroke-width: 2px; /* Border width when clicked */
+}

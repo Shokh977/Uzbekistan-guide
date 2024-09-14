@@ -1,32 +1,34 @@
 import Link from "next/link";
+import { FaRegUser } from "react-icons/fa";
+import classes from './navbar.module.css'
+import { LuLanguages } from "react-icons/lu";
 
 export const Navbar = () => {
   return (
-    <nav className="px-6">
-      <div className="h-16 mx-auto flex justify-between items-center">
-        <div className="laila-bold font-bold text-[24px] leading-[1.025] text-center text-black">
-          <h1>Uzbekistan</h1>
-        </div>
-        <div>
-          <ul className="flex gap-[40px]">
-            <li>
-              <Link className="font-semibold text-xl hover:text-gray-400" href="/">About</Link>
-            </li>
-            <li>
-              <Link className="font-semibold text-xl hover:text-gray-400" href="/">News</Link>
-            </li>
-            <li>
-              <Link className="font-semibold text-xl hover:text-gray-400" href="/">Shop</Link>
-            </li>
-            <li>
-              <Link className="font-semibold text-xl hover:text-gray-400" href="/">Spots</Link>
-            </li>
-            <li>
-              <Link className="font-semibold text-xl hover:text-gray-400" href="/">Culture</Link>
-            </li>
-          </ul>
-        </div>
-        <div>icon</div>
+    <nav className={classes.navbar}>
+      <h1>Uzbekistan</h1>
+      <div>
+        <ul className={classes.lists}>
+          <li className={classes.links}>
+            <Link href='/'>About</Link>
+          </li>
+          <li className={classes.links}>
+            <Link  href='/'>News</Link>
+          </li>
+          <li className={classes.links}>
+            <Link  href='/'>Shop</Link>
+          </li>
+          <li className={classes.links}>
+            <Link  href='/'>Spots</Link>
+          </li>
+          <li className={classes.links}>
+            <Link  href='/'>Culture</Link>
+          </li>
+        </ul>
+      </div>
+      <div className={classes.user}>
+        <div className={classes.language}><LuLanguages size={20}/></div>
+        <FaRegUser size={20} />
       </div>
     </nav>
   );

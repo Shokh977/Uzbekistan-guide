@@ -1,0 +1,13 @@
+.main{
+    display:flex;
+    gap:2rem;
+    width: 100%;
+        margin-top: 7rem;
+
+}
+.about{
+flex: 3
+}
+.news{
+flex: 1
+}

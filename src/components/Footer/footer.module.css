@@ -1,0 +1,37 @@
+.container{
+    width: 100%;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.cols{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem
+}
+.a{
+    max-width: 400px;
+}
+.a h1{
+font-weight: 700;
+font-size: 24px;
+text-align: center;
+color: #fff;
+margin-bottom: 1rem;
+}
+.a p{
+font-weight: 600;
+font-size: 13px;
+color: #5e6282;
+text-align: center;
+}
+
+.b, .c, .d, .e li a{
+    font-weight: 400;
+    font-size: 18px;
+        line-height: 1.245;
+    color: #5e6282;
+}
